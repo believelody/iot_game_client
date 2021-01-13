@@ -1,32 +1,30 @@
-.App {
-  text-align: center;
+.arena {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFFE0;
+  border: 1em solid grey;
+  box-sizing: border-box;
+  position: absolute;
+  overflow: hidden;
+  padding: O;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.arena > .kuminai {
+  position: absolute;
+  border: 1px silver ridge;
+  border-radius: 50%;
+  will-change: transform;
+  opacity: .6;
+  background-color: rgb(212, 9, 9);
+  width: 15px;
+  height: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.arena > .serial {
+  position: absolute;
+  border: 1px silver ridge;
+  border-radius: 50%;
+  background-color: rgb(26, 31, 17);
+  width: 30px;
+  height: 30px;
 }
